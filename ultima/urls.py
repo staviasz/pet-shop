@@ -16,11 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from base.views import inicio, contato
+from base.views import inicio, contato, marcacao
 
 urlpatterns = [
     path('', inicio, name='inicio'),
     path('contato/', contato, name='contato'),
+    path('marcacao/', marcacao, name='marcacao'),
     path('admin/', admin.site.urls),
     
 ]
